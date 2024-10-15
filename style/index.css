@@ -13,6 +13,9 @@
 .BgPinkColor{
     background-color: #CE1446;
 }
+.textColor{
+    color: #CE1446;
+}
 .bold-hr {
     border: none; 
     height: 3px; 
