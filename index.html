@@ -27,8 +27,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="barlow-font">
-    <header class="z-50">
+  <body class="barlow-font BgBody">
+    <header class="z-50 bg-white">
         <!-- Navbar design -->
         <nav
           class="lg:px-24 py-2 w-full flex justify-between items-center z-5"
@@ -43,48 +43,48 @@
           <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
             <!-- Main navigation for larger screens -->
             <ul class="hidden lg:flex items-center gap-3 text-center">
-              <li class="font-medium text-RaspberryRed px-4 py-2">
+              <li class="font-medium px-4 py-2">
                 <a href="index.html">Home</a>
               </li>
               <li
-                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed px-4 py-2 group"
+                class="relative flex justify-between items-center gap-2  px-4 py-2 group"
               >
                 <p class="cursor-pointer">Contest</p>
                 <ul
-                  class="absolute left-0 top-6 hidden bg-[#201A2F] text-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
                 >
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="our-mission.html">Google Treasure Hunter</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="team.html">Excel Pro</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="testimonials.html">Presentation Master</a>
                   </li>
                 </ul>
                 <p><i class="fa-solid fa-angle-down"></i></p>
               </li>
-              <li class="relative hover:text-RaspberryRed px-4 py-2 group">
+              <li class="relative  px-4 py-2 group">
                 <a href="#">Join-Team</a>
               </li>
               <li
-                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed px-4 py-2 group"
+                class="relative flex justify-between items-center gap-2  px-4 py-2 group"
               >
                 <p class="cursor-pointer">About</p>
                 <ul
-                  class="absolute left-0 top-6 hidden bg-[#201A2F] text-white group-hover:block rounded-lg shadow-lg mt-2"
+                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2"
                 >
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="our-mission.html">Our Mission</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="team.html">Our Team</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="testimonials.html">Testimonials</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="contact.html">Contact Us</a>
                   </li>
                 </ul>
@@ -101,7 +101,7 @@
         <!-- Mobile Sidebar -->
         <div
           id="mobileSidebar"
-          class="fixed inset-y-0 right-0 w-3/4 bg-[#201A2F] text-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+          class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
         >
           <div class="flex flex-col p-4 h-full">
             <div class="flex justify-between items-center">
@@ -112,47 +112,47 @@
             </div>
             <ul class="flex flex-col mt-4">
               <li class="py-2">
-                <a href="index.html" class="hover:text-RaspberryRed">Home</a>
+                <a href="index.html" class="">Home</a>
               </li>
               <li
-                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed py-2 group z-50"
+                class="relative flex justify-between items-center gap-2  py-2 group z-50"
               >
                 <p class="cursor-pointer">Contest</p>
                 <ul
-                  class="absolute left-0 top-6 hidden bg-[#0C0E1D] text-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
                 >
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="our-mission.html">Google Treasure Hunter</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="team.html">Excel Pro</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="testimonials.html">Presentation Master</a>
                   </li>
                 </ul>
                 <p><i class="fa-solid fa-angle-down"></i></p>
               </li>
               <li class="py-2">
-                <a href="#" class="hover:text-RaspberryRed">Join-Team</a>
+                <a href="#" class="">Join-Team</a>
               </li>
               <li
-                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed py-2 group z-40"
+                class="relative flex justify-between items-center gap-2  py-2 group z-40"
               >
                 <p class="cursor-pointer">About</p>
                 <ul
-                  class="absolute left-0 top-6 hidden bg-[#0C0E1D] text-white group-hover:block rounded-lg shadow-lg w-52 mt-2"
+                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
                 >
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="our-mission.html">Our Mission</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="team.html">Our Team</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="testimonials.html">Testimonials</a>
                   </li>
-                  <li class="hover:text-RaspberryRed px-4 py-2">
+                  <li class=" px-4 py-2">
                     <a href="contact.html">Contact Us</a>
                   </li>
                 </ul>
