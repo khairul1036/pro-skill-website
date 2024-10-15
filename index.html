@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empower NextGen Ltd.</title>
 
@@ -27,149 +27,472 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="barlow-font">
-    <header class="max-w-screen-2xl mx-auto z-50 bg-white">
-        <!-- Navbar design -->
-        <nav
-          class="lg:px-24 py-2 w-full flex justify-between items-center z-5"
-        >
-          <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
-            <h1 class="text-3xl font-extrabold">
-              <a href="index.html"
-                ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
-              /></a>
-            </h1>
+  <body class="barlow-font BgBody">
+    <header class="z-50 bg-white">
+      <!-- Navbar design -->
+      <nav class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5">
+        <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
+          <h1 class="text-3xl font-extrabold">
+            <a href="index.html"
+              ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
+            /></a>
+          </h1>
+        </div>
+        <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
+          <!-- Main navigation for larger screens -->
+          <ul class="hidden lg:flex items-center gap-3 text-center">
+            <li class="font-medium px-4 py-2">
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+            >
+              <p class="cursor-pointer">Contest</p>
+              <ul
+                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+              >
+                <li class="px-4 py-2">
+                  <a href="our-mission.html">Google Treasure Hunter</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="team.html">Excel Pro</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="testimonials.html">Presentation Master</a>
+                </li>
+              </ul>
+              <p><i class="fa-solid fa-angle-down"></i></p>
+            </li>
+            <li class="relative px-4 py-2 group">
+              <a href="#">Join-Team</a>
+            </li>
+            <li
+              class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+            >
+              <p class="cursor-pointer">About</p>
+              <ul
+                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2"
+              >
+                <li class="px-4 py-2">
+                  <a href="our-mission.html">Our Mission</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="team.html">Our Team</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <p><i class="fa-solid fa-angle-down"></i></p>
+            </li>
+          </ul>
+          <!-- Hamburger icon for mobile screens -->
+          <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
-            <!-- Main navigation for larger screens -->
-            <ul class="hidden lg:flex items-center gap-3 text-center">
-              <li class="font-medium px-4 py-2">
-                <a href="index.html">Home</a>
-              </li>
-              <li
-                class="relative flex justify-between items-center gap-2  px-4 py-2 group"
-              >
-                <p class="cursor-pointer">Contest</p>
-                <ul
-                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
-                >
-                  <li class=" px-4 py-2">
-                    <a href="our-mission.html">Google Treasure Hunter</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="team.html">Excel Pro</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="testimonials.html">Presentation Master</a>
-                  </li>
-                </ul>
-                <p><i class="fa-solid fa-angle-down"></i></p>
-              </li>
-              <li class="relative  px-4 py-2 group">
-                <a href="#">Join-Team</a>
-              </li>
-              <li
-                class="relative flex justify-between items-center gap-2  px-4 py-2 group"
-              >
-                <p class="cursor-pointer">About</p>
-                <ul
-                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2"
-                >
-                  <li class=" px-4 py-2">
-                    <a href="our-mission.html">Our Mission</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="team.html">Our Team</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="testimonials.html">Testimonials</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-                <p><i class="fa-solid fa-angle-down"></i></p>
-              </li>
-            </ul>
-            <!-- Hamburger icon for mobile screens -->
-            <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
-              <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <!-- Mobile Sidebar -->
+      <div
+        id="mobileSidebar"
+        class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+      >
+        <div class="flex flex-col p-4 h-full">
+          <div class="flex justify-between items-center">
+            <h2 class="text-xl font-bold"></h2>
+            <div class="text-2xl cursor-pointer" id="closeSidebar">
+              <i class="fa-solid fa-times"></i>
             </div>
           </div>
-        </nav>
-  
-        <!-- Mobile Sidebar -->
-        <div
-          id="mobileSidebar"
-          class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
-        >
-          <div class="flex flex-col p-4 h-full">
-            <div class="flex justify-between items-center">
-              <h2 class="text-xl font-bold"></h2>
-              <div class="text-2xl cursor-pointer" id="closeSidebar">
-                <i class="fa-solid fa-times"></i>
+          <ul class="flex flex-col mt-4">
+            <li class="py-2">
+              <a href="index.html" class="">Home</a>
+            </li>
+            <li
+              class="relative flex justify-between items-center gap-2 py-2 group z-50"
+            >
+              <p class="cursor-pointer">Contest</p>
+              <ul
+                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+              >
+                <li class="px-4 py-2">
+                  <a href="our-mission.html">Google Treasure Hunter</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="team.html">Excel Pro</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="testimonials.html">Presentation Master</a>
+                </li>
+              </ul>
+              <p><i class="fa-solid fa-angle-down"></i></p>
+            </li>
+            <li class="py-2">
+              <a href="#" class="">Join-Team</a>
+            </li>
+            <li
+              class="relative flex justify-between items-center gap-2 py-2 group z-40"
+            >
+              <p class="cursor-pointer">About</p>
+              <ul
+                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+              >
+                <li class="px-4 py-2">
+                  <a href="our-mission.html">Our Mission</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="team.html">Our Team</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="px-4 py-2">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <p><i class="fa-solid fa-angle-down"></i></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner section start -->
+      <div>
+        <img
+          class="w-full h-full lg:h-[800px]"
+          src="image/hero-bg.png"
+          alt="banner"
+        />
+      </div>
+      <!-- banner section end -->
+
+      <!-- event card start  -->
+      <section class="max-w-screen-xl mx-auto">
+        <h2 class="text-2xl lg:text-4xl text-center font-bold mt-28 mb-4">
+          Total Contest
+        </h2>
+        <div class="flex justify-center">
+          <hr class="w-20 bold-hr" />
+        </div>
+
+        <!-- card style one  -->
+        <div class="lg:flex justify-between items-center gap-5 mt-10 -z-20 hidden">
+          <!-- google Treasure Hunter -->
+          <div class="card bg-base-100 mx-5 lg:mx-0 my-5 lg:w-96 shadow-xl">
+            <figure>
+              <img class="w-72 h-h-52 p-4" src="image/gth.png" alt="logo" />
+            </figure>
+            <div class="p-5 bg-MidnightPurple rounded-b-xl">
+              <h2 class="font-bold text-2xl lg:text-3xl">
+                Google Treasure Hunter
+              </h2>
+              <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                  <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                  <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                  <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                  <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                  <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                      >View Map</span
+                    ></a
+                  >
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-full border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
+                >
+                  Register Now
+                </button>
               </div>
             </div>
-            <ul class="flex flex-col mt-4">
-              <li class="py-2">
-                <a href="index.html" class="">Home</a>
-              </li>
-              <li
-                class="relative flex justify-between items-center gap-2  py-2 group z-50"
-              >
-                <p class="cursor-pointer">Contest</p>
-                <ul
-                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          </div>
+          <!-- excel pro -->
+          <div class="card bg-base-100 mx-5 lg:mx-0 my-5 lg:w-96 shadow-xl">
+            <figure>
+              <img class="w-72 h-52 p-4" src="image/ep.png" alt="logo" />
+            </figure>
+            <div class="p-5 bg-MidnightPurple rounded-b-xl">
+              <h2 class="font-bold text-2xl lg:text-3xl">Excel Pro</h2>
+              <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                  <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                  <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                  <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                  <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                  <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                      >View Map</span
+                    ></a
+                  >
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-full border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
                 >
-                  <li class=" px-4 py-2">
-                    <a href="our-mission.html">Google Treasure Hunter</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="team.html">Excel Pro</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="testimonials.html">Presentation Master</a>
-                  </li>
-                </ul>
-                <p><i class="fa-solid fa-angle-down"></i></p>
-              </li>
-              <li class="py-2">
-                <a href="#" class="">Join-Team</a>
-              </li>
-              <li
-                class="relative flex justify-between items-center gap-2  py-2 group z-40"
-              >
-                <p class="cursor-pointer">About</p>
-                <ul
-                  class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+                  Register Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- presentation master -->
+          <div class="card bg-base-100 mx-5 lg:mx-0 my-5 lg:w-96 shadow-xl">
+            <figure>
+              <img class="w-72 h-52 p-4" src="image/pm.png" alt="logo" />
+            </figure>
+            <div class="p-5 bg-MidnightPurple rounded-b-xl">
+              <h2 class="font-bold text-2xl lg:text-3xl">
+                Presentation Master
+              </h2>
+              <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                  <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                  <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                  <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                  <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                  <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                  <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                      >View Map</span
+                    ></a
+                  >
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn w-full border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
                 >
-                  <li class=" px-4 py-2">
-                    <a href="our-mission.html">Our Mission</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="team.html">Our Team</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="testimonials.html">Testimonials</a>
-                  </li>
-                  <li class=" px-4 py-2">
-                    <a href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-                <p><i class="fa-solid fa-angle-down"></i></p>
+                  Register Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card style two  -->
+        <!-- google Treasure Hunter -->
+        <div class="card grid grid-cols-1 lg:grid-cols-5 gap-5 items-center border bg-white shadow-xl mx-5 lg:mx-0 p-5 my-5">
+            <div class="col-span-2">
+                <img class="w-72 h-52 mx-auto p-5" src="image/gth.png" alt="logo" />
+            </div>
+            <div class="col-span-3">
+                <h2 class="font-bold text-2xl lg:text-3xl">
+                Google Treasure Hunter
+                </h2>
+                <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                    <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                    <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                    <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                    <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                    <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                    <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                        >View Map</span
+                    ></a
+                    >
+                </p>
+                </div>
+                <div class="text-center">
+                <button
+                    class="btn w-full lg:w-1/2 border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
+                >
+                    Register Now
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- excel pro  -->
+        <div class="card grid grid-cols-1 lg:grid-cols-5 gap-5 items-center border bg-white shadow-xl mx-5 lg:mx-0 p-5 my-5">
+            <div class="col-span-2">
+                <img class="w-72 h-52 mx-auto p-5" src="image/ep.png" alt="logo" />
+            </div>
+            <div class="col-span-3">
+                <h2 class="font-bold text-2xl lg:text-3xl">
+                Excel Pro
+                </h2>
+                <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                    <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                    <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                    <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                    <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                    <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                    <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                        >View Map</span
+                    ></a
+                    >
+                </p>
+                </div>
+                <div class="text-center">
+                <button
+                    class="btn w-full lg:w-1/2 border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
+                >
+                    Register Now
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- presentation master -->
+        <div class="card grid grid-cols-1 lg:grid-cols-5 gap-5 items-center border bg-white shadow-xl mx-5 lg:mx-0 p-5 my-5">
+            <div class="col-span-2">
+                <img class="w-72 h-52 mx-auto p-5" src="image/pm.png" alt="logo" />
+            </div>
+            <div class="col-span-3">
+                <h2 class="font-bold text-2xl lg:text-3xl">
+                Presentation Master
+                </h2>
+                <div class="grid grid-cols-2 my-5 gap-2">
+                <p>
+                    <i class="fa-solid fa-bangladeshi-taka-sign mr-1"></i>Fee:
+                    <span class="font-bold">300 TK</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-trophy mr-1"></i>Prize:
+                    <span class="font-bold">8000 TK</span>
+                </p>
+                <p>
+                    <i class="fa-regular fa-clock mr-1"></i>Deadline:
+                    <span class="font-bold">25-10-2024</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot mr-1"></i>Location:
+                    <a href=""
+                    ><span class="font-bold text-green-600 underline"
+                        >View Map</span
+                    ></a
+                    >
+                </p>
+                </div>
+                <div class="text-center">
+                <button
+                    class="btn w-full lg:w-1/2 border-none text-xl text-white bg-[#ce1446] hover:bg-[#533318]"
+                >
+                    Register Now
+                </button>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- event card end  -->
+
+      <!-- promo video section start -->
+      <section class="max-w-screen-xl mx-auto py-10 lg:py-28">
+        <h2 class="text-2xl lg:text-4xl text-center font-bold mb-4">
+          What is "Pro Skills Battles"?
+        </h2>
+        <div class="flex justify-center">
+          <hr class="w-20 bold-hr" />
+        </div>
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center mt-10"
+        >
+          <!-- Left Side: Promo Video -->
+          <div class="w-full md:w-1/2 p-4">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                class="w-full h-[200px] lg:h-[350px] rounded-2xl"
+                src="https://www.youtube.com/embed/_CKnqRhebYg?si=MKZzh5LTBiqiUxt5"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Right Side: Content -->
+          <div class="w-full md:w-1/2 p-4">
+            <p class="mb-2 text-justify">
+              <strong>"Pro Skills Battles"</strong> is a competitive platform
+              designed to enhance professional skills through challenges and
+              real-time feedback. Participants can engage in various skill-based
+              contests, showcasing their expertise in fields like design,
+              coding, writing, and more.
+            </p>
+            <h3 class="text-xl font-semibold mb-2">Key Concepts</h3>
+            <ul class="list-disc pl-5 mb-4">
+              <li>
+                <strong>Skill Development:</strong> Focuses on improving
+                specific professional abilities through practice and
+                competition.
+              </li>
+              <li>
+                <strong>Peer Learning:</strong> Encourages collaboration and
+                learning from fellow participants.
+              </li>
+              <li>
+                <strong>Real-Time Feedback:</strong> Provides immediate insights
+                and critiques to help users refine their skills.
+              </li>
+              <li>
+                <strong>Feedback</strong>: Provide users with responsive
+                feedback during interactions.
+              </li>
+              <li>
+                <strong>Accessibility</strong>: Make sure designs are usable for
+                everyone.
+              </li>
+              <li>
+                <strong>Responsive Design</strong>: Optimize for various devices
+                and screen sizes.
               </li>
             </ul>
           </div>
         </div>
-      </header>
-
-      <main>
-        <!-- banner section start -->
-         <div>
-            <img class="w-full h-full" src="image/hero-bg.png" alt="banner">
-         </div>
-        <!-- banner section end -->
-      </main>
-      <script src="js/index.js"></script>
+      </section>
+      <!-- promo video section end -->
+    </main>
+    <script src="js/index.js"></script>
   </body>
 </html>

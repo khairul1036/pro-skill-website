@@ -10,12 +10,12 @@
 .BgColor{
     background-color:#e8e8e8;
 }
-/* share color end */
-
-
-
-/* .bold-hr {
+.BgPinkColor{
+    background-color: #CE1446;
+}
+.bold-hr {
     border: none; 
     height: 3px; 
     background-color: #CE1446;
-} */
+}
+/* share color end */
