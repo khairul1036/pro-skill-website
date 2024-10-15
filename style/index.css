@@ -13,6 +13,10 @@
 .BgPinkColor{
     background-color: #CE1446;
 }
+.BgGradient{
+    background: rgb(41,14,45);
+    background: linear-gradient(45deg, rgba(41,14,45,1) 0%, rgba(10,18,60,1) 100%);
+}
 .textColor{
     color: #CE1446;
 }
@@ -20,5 +24,8 @@
     border: none; 
     height: 3px; 
     background-color: #CE1446;
+}
+.session:hover {
+    background-color: #f9fafb; 
 }
 /* share color end */
