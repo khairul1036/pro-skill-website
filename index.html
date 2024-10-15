@@ -1,11 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Skill Battel</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empower NextGen Ltd.</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- fontawesome and google font CDN link -->
+    <script
+      src="https://kit.fontawesome.com/70d1331392.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Barlow Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and DaisyUI CDN link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="barlow-font">
+    <header class="z-50">
+        <!-- Navbar design -->
+        <nav
+          class="lg:px-24 py-2 w-full flex justify-between items-center z-5"
+        >
+          <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
+            <h1 class="text-3xl font-extrabold">
+              <a href="index.html"
+                ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
+              /></a>
+            </h1>
+          </div>
+          <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
+            <!-- Main navigation for larger screens -->
+            <ul class="hidden lg:flex items-center gap-3 text-center">
+              <li class="font-medium text-RaspberryRed px-4 py-2">
+                <a href="index.html">Home</a>
+              </li>
+              <li
+                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed px-4 py-2 group"
+              >
+                <p class="cursor-pointer">Contest</p>
+                <ul
+                  class="absolute left-0 top-6 hidden bg-[#201A2F] text-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+                >
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="our-mission.html">Google Treasure Hunter</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="team.html">Excel Pro</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="testimonials.html">Presentation Master</a>
+                  </li>
+                </ul>
+                <p><i class="fa-solid fa-angle-down"></i></p>
+              </li>
+              <li class="relative hover:text-RaspberryRed px-4 py-2 group">
+                <a href="#">Join-Team</a>
+              </li>
+              <li
+                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed px-4 py-2 group"
+              >
+                <p class="cursor-pointer">About</p>
+                <ul
+                  class="absolute left-0 top-6 hidden bg-[#201A2F] text-white group-hover:block rounded-lg shadow-lg mt-2"
+                >
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="our-mission.html">Our Mission</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="team.html">Our Team</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="testimonials.html">Testimonials</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <p><i class="fa-solid fa-angle-down"></i></p>
+              </li>
+            </ul>
+            <!-- Hamburger icon for mobile screens -->
+            <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+  
+        <!-- Mobile Sidebar -->
+        <div
+          id="mobileSidebar"
+          class="fixed inset-y-0 right-0 w-3/4 bg-[#201A2F] text-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+        >
+          <div class="flex flex-col p-4 h-full">
+            <div class="flex justify-between items-center">
+              <h2 class="text-xl font-bold"></h2>
+              <div class="text-2xl cursor-pointer" id="closeSidebar">
+                <i class="fa-solid fa-times"></i>
+              </div>
+            </div>
+            <ul class="flex flex-col mt-4">
+              <li class="py-2">
+                <a href="index.html" class="hover:text-RaspberryRed">Home</a>
+              </li>
+              <li
+                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed py-2 group z-50"
+              >
+                <p class="cursor-pointer">Contest</p>
+                <ul
+                  class="absolute left-0 top-6 hidden bg-[#0C0E1D] text-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+                >
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="our-mission.html">Google Treasure Hunter</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="team.html">Excel Pro</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="testimonials.html">Presentation Master</a>
+                  </li>
+                </ul>
+                <p><i class="fa-solid fa-angle-down"></i></p>
+              </li>
+              <li class="py-2">
+                <a href="#" class="hover:text-RaspberryRed">Join-Team</a>
+              </li>
+              <li
+                class="relative flex justify-between items-center gap-2 hover:text-RaspberryRed py-2 group z-40"
+              >
+                <p class="cursor-pointer">About</p>
+                <ul
+                  class="absolute left-0 top-6 hidden bg-[#0C0E1D] text-white group-hover:block rounded-lg shadow-lg w-52 mt-2"
+                >
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="our-mission.html">Our Mission</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="team.html">Our Team</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="testimonials.html">Testimonials</a>
+                  </li>
+                  <li class="hover:text-RaspberryRed px-4 py-2">
+                    <a href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <p><i class="fa-solid fa-angle-down"></i></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main></main>
+      <script src="js/index.js"></script>
+  </body>
 </html>
