@@ -28,7 +28,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="barlow-font BgBody">
-    <header class="z-50 bg-white">
+    <header class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm">
       <!-- Navbar design -->
       <nav class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5">
         <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
@@ -182,7 +182,7 @@
         </div>
 
         <!-- card style one  -->
-        <div class="lg:flex justify-between items-center gap-5 mt-10 -z-20 hidden">
+        <div class="lg:flex justify-between items-center gap-5 mt-10 -z-20 hidden lg:hidden">
           <!-- google Treasure Hunter -->
           <div class="card bg-base-100 mx-5 lg:mx-0 my-5 lg:w-96 shadow-xl">
             <figure>
@@ -493,6 +493,46 @@
       </section>
       <!-- promo video section end -->
 
+       <!-- counter section start -->
+       <section class="bg-[#280E2D] py-24">
+        <div
+          class="max-w-screen-xl mx-auto grid lg:grid-cols-4 gap-12 lg:gap-0 text-white"
+        >
+          <!-- Participant Counter -->
+          <div class="text-center">
+            <h2 class="text-7xl font-bold text-white" id="participants">
+              0
+            </h2>
+            <p class="text-stone-300 text-xl mt-2">Participants</p>
+          </div>
+
+          <!-- Sub-Events Counter -->
+          <div class="text-center">
+            <h2 class="text-7xl font-bold" id="subEvents">
+              0
+            </h2>
+            <p class="text-stone-300 text-xl mt-2">Sub-Events</p>
+          </div>
+
+          <!-- Seminars Counter -->
+          <div class="text-center">
+            <h2 class="text-7xl font-bold" id="seminars">
+              0
+            </h2>
+            <p class="text-stone-300 text-xl mt-2">Seminars</p>
+          </div>
+
+          <!-- Department Counter -->
+          <div class="text-center">
+            <h2 class="text-7xl font-bold" id="department">
+              0
+            </h2>
+            <p class="text-stone-300 text-xl mt-2">Department</p>
+          </div>
+        </div>
+      </section>
+      <!-- counter section end -->
+
       <!-- speakers section start -->
        <section class="max-w-screen-xl mx-auto py-10 lg:py-28">
         <h2 class="text-2xl lg:text-4xl text-center font-bold mb-4">
@@ -575,9 +615,9 @@
        </section>
       <!-- speakers section end -->
 
-      
+
     </main>
-    <!-- footer section -->
+    <!-- footer section -->f
     <footer class="bg-gradient-to-r from-[#290E2D] to-[#0A123C]">
         <!--brand logo  -->
         <div class="max-w-screen-xl mx-auto py-10 flex justify-center">
