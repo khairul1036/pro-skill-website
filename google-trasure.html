@@ -25,9 +25,12 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-   <header>
-    <nav
+<body class="barlow-font BgBody">
+  <header
+  class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm"
+>
+  <!-- Navbar design -->
+  <nav
     class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5"
   >
     <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
@@ -70,7 +73,7 @@
         >
           <p class="cursor-pointer">About</p>
           <ul
-            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2"
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52"
           >
             <li class="px-4 py-2">
               <a href="our-mission.html">Our Mission</a>
@@ -79,7 +82,7 @@
               <a href="team.html">Our Team</a>
             </li>
             <li class="px-4 py-2">
-              <a href="testimonials.html">Testimonials</a>
+              <a href="judges.html">Meet Our Judges</a>
             </li>
             <li class="px-4 py-2">
               <a href="contact.html">Contact Us</a>
@@ -94,7 +97,71 @@
       </div>
     </div>
   </nav>
-   </header>
+
+  <!-- Mobile Sidebar -->
+  <div
+    id="mobileSidebar"
+    class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+  >
+    <div class="flex flex-col p-4 h-full">
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold"></h2>
+        <div class="text-2xl cursor-pointer" id="closeSidebar">
+          <i class="fa-solid fa-times"></i>
+        </div>
+      </div>
+      <ul class="flex flex-col mt-4">
+        <li class="py-2">
+          <a href="index.html" class="">Home</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-50"
+        >
+          <p class="cursor-pointer">Contest</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Google Treasure Hunter</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Excel Pro</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="testimonials.html">Presentation Master</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+        <li class="py-2">
+          <a href="#" class="">Join-Team</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-40"
+        >
+          <p class="cursor-pointer">About</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Our Mission</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Our Team</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="judges.html">Meet Our Judges</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
  <main>
 
@@ -453,6 +520,8 @@
       });
     });
   </script>
+  <script src="./js/index.js"></script>
+  <script src="./js/judges.js"></script>
 
 </body>
 </html>
