@@ -2,6 +2,25 @@
     font-family: "Barlow", sans-serif;
     font-style: normal;
 }
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.tab-button {
+    color: #ADA3BE; /* Normal color */
+}
+.tab-button.active {
+    color: #CE1446; /* Active color */
+    font-weight: bold;
+}
+.tab-active {
+    color: #CE1446;
+}
+.tab-inactive {
+    color: #ADA3BE;
+}
 
 /* share color start */
 .BgBody{
@@ -29,3 +48,109 @@
     background-color: #f9fafb; 
 }
 /* share color end */
+
+
+
+  .x{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: coral;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: indianred;
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: darksalmon;
+        transform: rotate(180deg);
+      }
+  }
+  
+  .y{ width: 200px;
+    height: 200px;
+    background-color: rgb(20, 222, 57);
+    -webkit-animation: roundTOcircle 2s 1s infinite alternate;
+  }
+
+
+ @-webkit-keyframes roundTOcircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: rgb(20, 222, 57);
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: rgb(16, 235, 34);
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: rgb(53, 255, 114);
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: rgb(91, 216, 103);
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: rgb(128, 233, 122);
+        transform: rotate(180deg);
+      }
+  }
+  .z{ width: 200px;
+    height: 200px;
+    background-color: rgb(247, 195, 22);
+    -webkit-animation: toCircle 2s 1s infinite alternate;
+  }
+
+
+ @-webkit-keyframes toCircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: rgb(247, 195, 22);
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: rgb(246, 226, 14);
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: rgb(230, 255, 43);
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: rgb(255, 223, 13);
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: rgb(255, 181, 20);
+        transform: rotate(180deg);
+      }
+  }
