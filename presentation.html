@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <!-- fontawesome and google font CDN link -->
+    <script
+      src="https://kit.fontawesome.com/70d1331392.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Barlow Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and DaisyUI CDN link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="barlow-font BgBody">
+  <header
+  class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm"
+>
+  <!-- Navbar design -->
+  <nav
+    class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5"
+  >
+    <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
+      <h1 class="text-3xl font-extrabold">
+        <a href="index.html"
+          ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
+        /></a>
+      </h1>
+    </div>
+    <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
+      <!-- Main navigation for larger screens -->
+      <ul class="hidden lg:flex items-center gap-3 text-center text-black">
+        <li class="font-medium px-4 py-2">
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+        >
+          <p class="cursor-pointer">Contest</p>
+          <ul
+            class="absolute left-0 top-6 hidden bg-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          >
+            <li class="px-4 py-2">
+              <a href="./google-trasure.html">Google Treasure Hunter</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="./Ex-pro.html">Excel Pro</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="./presentation.html">Presentation Master</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+        <li class="relative px-4 py-2 group">
+          <a href="#">Join-Team</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+        >
+          <p class="cursor-pointer">About</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Our Mission</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Our Team</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="judges.html">Meet Our Judges</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+      </ul>
+      <!-- Hamburger icon for mobile screens -->
+      <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div
+    id="mobileSidebar"
+    class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+  >
+    <div class="flex flex-col p-4 h-full">
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold"></h2>
+        <div class="text-2xl cursor-pointer" id="closeSidebar">
+          <i class="fa-solid fa-times"></i>
+        </div>
+      </div>
+      <ul class="flex flex-col mt-4">
+        <li class="py-2">
+          <a href="index.html" class="">Home</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-50"
+        >
+          <p class="cursor-pointer">Contest</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Google Treasure Hunter</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Excel Pro</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="testimonials.html">Presentation Master</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+        <li class="py-2">
+          <a href="#" class="">Join-Team</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-40"
+        >
+          <p class="cursor-pointer">About</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Our Mission</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Our Team</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="judges.html">Meet Our Judges</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+ <main>
+
+    <!-- Here is a banner section start -->
+    <div>
+        <img
+          class="w-full h-full lg:h-[800px]"
+          src="image/hero-bg.png"
+          alt="banner"
+        />
+      </div>
+      <!-- Here is a banner section end -->
+
+      <!-- here is button tab section -->
+      <section class="max-w-screen-xl mx-auto py-10 px-4 lg:px-0">
+        <div class="container mx-auto py-10 px-4 lg:px-0">
+          <div class="bg-white  rounded-lg">
+            
+            <!-- Tabs -->
+            <div class="flex flex-wrap border-b border-gray-300 justify-center py-6 lg:py-10 px-2 lg:text-xl gap-5 lg:gap-10">
+              <button id="registration-tab" class="tab-button text-black py-3 px-5 bg-white ">Registration</button>
+              <button id="about-tab" class="tab-button text-black py-3 px-5  bg-white ">About</button>
+              <button id="prizes-tab" class="tab-button text-black py-3 px-5  bg-white ">Prize Money</button>
+              <button id="schedule-tab" class="tab-button text-black py-3 px-5  bg-white">Schedule</button>
+              <button id="venue-tab" class="tab-button text-black py-3 px-5  bg-white ">Venue</button>
+              <button id="rules-tab" class="tab-button text-black py-3 px-5  bg-white ">Rules & Marking</button>
+              <button id="notice-tab" class="tab-button text-black py-3 px-5  bg-white">Notice Board</button>
+            </div>
+      
+            <!-- Tab Content -->
+
+            <div id="registration" class="tab-content px-5 lg:px-20 py-10 hidden  bg-white mt-0 ">
+              <div class="bg-white text-black p-6 rounded-lg text-center">
+                <h2 class="text-3xl font-extrabold mb-4 ">Registration</h2>
+                  <button
+                    class="btn w-full lg:w-1/2 border-none text-xl text-white bg-[#0F264B] hover:bg-[#385b8d]"
+                  >
+                    Register Now
+                  </button>
+                
+              </div>
+            </div>
+            <!-- About -->
+            <div id="about" class="tab-content px-5 lg:px-20 py-10 active">
+            
+                  <h2 class="text-3xl font-extrabold mb-4">About</h2>
+                  <p class="text-black text-justify">
+                    Welcome to our annual event, where we bring together people from all walks of life for a day of celebration, learning, and competition. Enjoy a range of activities, from music performances to exciting games!
+                  </p>
+                
+              </div>
+            </div>
+      
+            <!-- Prize Money -->
+            <div id="prizes" class="tab-content px-5 lg:px-20 py-10 hidden bg-white mt-0 ">
+
+                <h2 class="text-3xl font-extrabold mb-4">Prize Money</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+                  
+                  <!-- Dynamic card for 1st Place -->
+                  <div class="p-6 rounded-lg shadow-lg  transition-all duration-300 bg-gradient-to-br from-yellow-500 to-yellow-300 hover:bg-gradient-to-br hover:from-yellow-600 hover:to-yellow-400">
+                    <h3 class="text-xl font-semibold mb-2">1st Place</h3>
+                    <p class="text-black">$5000</p>
+                  </div>
+            
+                  <!-- Dynamic card for 2nd Place -->
+                  <div class="p-6 rounded-lg shadow-lg transition-all duration-300 bg-gradient-to-br from-gray-400 to-gray-300 hover:bg-gradient-to-br hover:from-gray-500 hover:to-gray-400">
+                    <h3 class="text-xl font-semibold mb-2">2nd Place</h3>
+                    <p class="text-black">$3000</p>
+                  </div>
+            
+                  <!-- Dynamic card for 3rd Place -->
+                  <div class="p-6 rounded-lg shadow-lg transition-all duration-300 bg-gradient-to-br from-yellow-700 to-yellow-600 hover:bg-gradient-to-br hover:from-yellow-800 hover:to-yellow-700">
+                    <h3 class="text-xl font-semibold mb-2">3rd Place</h3>
+                    <p class="text-black">$1000</p>
+                  </div>
+            
+                </div>
+              
+            </div>
+            
+      
+            <!-- Schedule -->
+            <div id="schedule" class="tab-content px-5 lg:px-20 py-10 hidden  bg-white mt-0 ">
+              <div class="bg-white text-black p-6 rounded-lg">
+                <h2 class="text-3xl font-extrabold mb-4">Schedule</h2>
+                <ul class="list-disc pl-5 text-black">
+                  <li>10:00 AM - Opening Ceremony</li>
+                  <li>12:00 PM - Lunch Break</li>
+                  <li>02:00 PM - Music Performance</li>
+                  <li>04:00 PM - Games and Activities</li>
+                  <li>06:00 PM - Closing Ceremony</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Venue -->
+            <div id="venue" class="tab-content px-5 lg:px-20 py-10 hidden  bg-white mt-0 ">
+              <div class="bg-white text-black p-6 rounded-lg flex flex-col md:flex-row">
+                <div class="flex-1">
+                  <h2 class="text-3xl font-extrabold mb-4">Venue</h2>
+                  <p class="text-black">Location: Central Park, New York</p>
+                  <p class="text-black">Address: 123 Park Ave, New York, NY 10001</p>
+                  <p class="text-black">Directions: Easily accessible via subway and bus routes. Parking available on-site.</p>
+                </div>
+                <div class="flex-1 ">
+                  <iframe class="rounded-5xl  w-9/12 mx-auto lg:w-full my-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3587105429356!2d90.31758427516768!3d23.876895578584293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1729053316691!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Rules & Marking -->
+            <div id="rules" class="tab-content px-5 lg:px-20 py-10 hidden  bg-white mt-0 ">
+              <div class="bg-white text-black p-6 rounded-lg ">
+                <h2 class="text-3xl font-extrabold mb-4">Rules & Marking</h2>
+                <p class="text-black">All participants must adhere to the following rules:</p>
+                <ul class="list-disc pl-5 text-black">
+                  <li>Respect all event staff and other participants.</li>
+                  <li>Follow the specific rules for each activity.</li>
+                  <li>Any form of cheating will result in disqualification.</li>
+                  <li>Stay within designated areas and follow safety guidelines.</li>
+                </ul>
+                <p class="text-gray-300 mt-4">Marking criteria will be based on performance, creativity, and adherence to the rules. Judges' decisions are final.</p>
+              </div>
+            </div>
+      
+            <!-- Notice Board -->
+            <div id="notice" class="tab-content px-5 lg:px-20 py-10 hidden  bg-white mt-0 ">
+              <div class="bg-white text-black p-6 ">
+                <h2 class="text-3xl font-extrabold mb-4">Notice Board</h2>
+                <ul class="list-disc pl-5 text-black">
+                  <li>Registration closes on September 25, 2024.</li>
+                  <li>All participants must check in by 9:30 AM on the event day.</li>
+                  <li>Weather updates will be provided on our website and social media channels.</li>
+                </ul>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      <div class="mx-auto z">
+    </div>
+
+
+      <section class="max-w-screen-xl mx-auto py-10 lg:py-28">
+        <div>
+        </div>
+        <h2 class="text-2xl lg:text-4xl text-center font-bold mb-4">
+          What is "Presentation master event "?
+        </h2>
+        <div class="flex justify-center">
+          <hr class="w-20 bold-hr" />
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center mt-10 ">
+          
+          <!-- Left Side: Promo Video -->
+          <div class="w-full md:w-1/2 p-4">
+            <div class="relative aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-[200px] lg:h-[350px] rounded-2xl  object-cover" width="560" height="315" src="https://www.youtube.com/embed/lfW8Z0KDpAI?si=_oXw-hBAt7gcBqXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+      
+          <!-- Right Side: Content -->
+          <div class="w-full md:w-1/2 p-4">
+
+            <p class="mb-2 text-justify">
+              <strong>"Google Treasure Hunter"</strong> is a competitive platform
+              designed to enhance professional skills through challenges and
+              real-time feedback. Participants can engage in various skill-based
+              contests, showcasing their expertise in fields like design,
+              coding, writing, and more.
+            </p>
+            <h3 class="text-xl font-semibold mb-2">Key Concepts</h3>
+            <ul class="list-disc pl-5 mb-4">
+              <li>
+                <strong>Skill Development:</strong> Focuses on improving
+                specific professional abilities through practice and
+                competition.
+              </li>
+              <li>
+                <strong>Peer Learning:</strong> Encourages collaboration and
+                learning from fellow participants.
+              </li>
+              <li>
+                <strong>Real-Time Feedback:</strong> Provides immediate insights
+                and critiques to help users refine their skills.
+              </li>
+              <li>
+                <strong>Feedback</strong>: Provide users with responsive
+                feedback during interactions.
+              </li>
+              <li>
+                <strong>Accessibility</strong>: Make sure designs are usable for
+                everyone.
+              </li>
+              <li>
+                <strong>Responsive Design</strong>: Optimize for various devices
+                and screen sizes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+ </main>
+
+ <footer class="bg-gradient-to-r from-[#290E2D] to-[#0A123C]">
+    <!--brand logo  -->
+    <div class="max-w-screen-xl mx-auto py-10 flex justify-center">
+      <a href="index.html"
+        ><img class="w-36" src="image/logo1.png" alt="logo"
+      /></a>
+    </div>
+    <!-- Quick Link container  -->
+    <div class="max-w-screen-xl mx-auto md:flex justify-between">
+      <div
+        class="md:w-[25%] flex flex-col items-center lg:items-start md:mb-0 mb-10"
+      >
+        <div class="mb-5">
+          <p
+            class="text-2xl font-semibold text-center lg:text-start text-slate-200"
+          >
+            Quick Link
+          </p>
+        </div>
+        <div>
+          <ul class="flex flex-col leading-7 text-center lg:text-start">
+            <li class="mb-1">
+              <a
+                class="font- hover:underline text-slate-200"
+                href="about.html"
+                >Our Team</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Join Us</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Advisor Panel</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Lottery Winner</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Policy</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >FAQ's</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Subscribe container  -->
+      <div
+        class="flex flex-col text-center gap-3 lg:gap-5 mt-2 lg:mt-0 text-slate-200"
+      >
+        <h2 class="text-2xl text-slate-200 font-semibold">Social Link</h2>
+        <a href="https://www.facebook.com/EmpowerNextGenLtd" target="_blank"
+          ><i class="fa-brands fa-facebook-f text-xl mr-2"></i>Facebook</a
+        >
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-instagram text-xl mr-2"></i>Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com/company/empower-nextgen-ltd/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in text-xl mr-2"></i>LinkedIn</a
+        >
+        <!-- <a href="#" target="_blank"><i class="fa-brands fa-twitter text-xl mr-2"></i>X</a> -->
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-whatsapp text-xl mr-2"></i>WhatsApp</a
+        >
+        <a href="https://www.youtube.com/@EmpowerNextGenLtd" target="_blank"
+          ><i class="fa-brands fa-youtube text-xl mr-2"></i>Youtube</a
+        >
+      </div>
+
+      <!-- Contact container   -->
+      <div class="md:w-[25%] flex flex-col items-center lg:items-end">
+        <div class="mt-10 lg:mt-0 order-2 lg:order-3">
+          <h2 class="text-2xl mb-5 text-slate-200 font-semibold">Contact</h2>
+          <div class="text-slate-200">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-phone text-2xl"></i>
+              <div class="">
+                <p><a href="tel:+8801568219379">+880 1568219379</a></p>
+                <p><a href="tel:+8801777973799">+880 1777973799</a></p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-envelope text-2xl"></i>
+              <div class="">
+                <p>
+                  <a href="mailto:info@example.com"
+                    >info@empowernextgenbd.com</a
+                  >
+                </p>
+                <p>
+                  <a href="mailto:support@example.com"
+                    >support@empowernextgenbd.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-2xl"></i>
+              <div class="">
+                <p>Dhaka,Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="max-w-screen-xl mx-auto mt-10" />
+    <div class="py-5 lg:py-10 text-center text-gray-300">
+      Copyright &copy; 2024 Empower NextGen Ldt.
+    </div>
+  </footer>
+  <script>
+    // Activate the About tab by default
+    document.getElementById("about").classList.add("active");
+    document.getElementById("about-tab").classList.add("active");
+
+    document.querySelectorAll(".tab-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        // Hide all tab contents
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
+
+        // Remove 'active' class from all tab buttons
+        document
+          .querySelectorAll(".tab-button")
+          .forEach((btn) => btn.classList.remove("active"));
+
+        // Show the clicked tab's content
+        const tabId = button.id.split("-")[0];
+        document.getElementById(tabId).classList.add("active");
+
+        // Set the clicked button as active
+        button.classList.add("active");
+      });
+    });
+  </script>
+  
+  <script src="./js/index.js"></script>
+  <script src="./js/judges.js"></script>
+
+</body>
+</html>
