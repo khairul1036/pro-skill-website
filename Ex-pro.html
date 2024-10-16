@@ -27,141 +27,141 @@
 </head>
 <body class="barlow-font BgBody">
   <header
-      class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm"
-    >
-      <!-- Navbar design -->
-      <nav
-        class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5"
-      >
-        <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
-          <h1 class="text-3xl font-extrabold">
-            <a href="index.html"
-              ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
-            /></a>
-          </h1>
-        </div>
-        <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
-          <!-- Main navigation for larger screens -->
-          <ul class="hidden lg:flex items-center gap-3 text-center">
-            <li class="font-medium px-4 py-2">
-              <a href="index.html">Home</a>
+  class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm"
+>
+  <!-- Navbar design -->
+  <nav
+    class="max-w-screen-2xl mx-auto lg:px-24 py-2 w-full flex justify-between items-center z-5"
+  >
+    <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
+      <h1 class="text-3xl font-extrabold">
+        <a href="index.html"
+          ><img class="w-20 lg:w-28" src="image/logo2.png" alt=""
+        /></a>
+      </h1>
+    </div>
+    <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
+      <!-- Main navigation for larger screens -->
+      <ul class="hidden lg:flex items-center gap-3 text-center text-black">
+        <li class="font-medium px-4 py-2">
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+        >
+          <p class="cursor-pointer">Contest</p>
+          <ul
+            class="absolute left-0 top-6 hidden bg-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          >
+            <li class="px-4 py-2">
+              <a href="./google-trasure.html">Google Treasure Hunter</a>
             </li>
-            <li
-              class="relative flex justify-between items-center gap-2 px-4 py-2 group"
-            >
-              <p class="cursor-pointer">Contest</p>
-              <ul
-                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
-              >
-                <li class="px-4 py-2">
-                  <a href="./google-trasure.html">Google Treasure Hunter</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="./Ex-pro.html">Excel Pro</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="./presentation.html">Presentation Master</a>
-                </li>
-              </ul>
-              <p><i class="fa-solid fa-angle-down"></i></p>
+            <li class="px-4 py-2">
+              <a href="./Ex-pro.html">Excel Pro</a>
             </li>
-            <li class="relative px-4 py-2 group">
-              <a href="#">Join-Team</a>
-            </li>
-            <li
-              class="relative flex justify-between items-center gap-2 px-4 py-2 group"
-            >
-              <p class="cursor-pointer">About</p>
-              <ul
-                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52"
-              >
-                <li class="px-4 py-2">
-                  <a href="our-mission.html">Our Mission</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="team.html">Our Team</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="judges.html">Meet Our Judges</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-              <p><i class="fa-solid fa-angle-down"></i></p>
+            <li class="px-4 py-2">
+              <a href="./presentation.html">Presentation Master</a>
             </li>
           </ul>
-          <!-- Hamburger icon for mobile screens -->
-          <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-        </div>
-      </nav>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+        <li class="relative px-4 py-2 group">
+          <a href="#">Join-Team</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+        >
+          <p class="cursor-pointer">About</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Our Mission</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Our Team</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="judges.html">Meet Our Judges</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+      </ul>
+      <!-- Hamburger icon for mobile screens -->
+      <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
 
-      <!-- Mobile Sidebar -->
-      <div
-        id="mobileSidebar"
-        class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
-      >
-        <div class="flex flex-col p-4 h-full">
-          <div class="flex justify-between items-center">
-            <h2 class="text-xl font-bold"></h2>
-            <div class="text-2xl cursor-pointer" id="closeSidebar">
-              <i class="fa-solid fa-times"></i>
-            </div>
-          </div>
-          <ul class="flex flex-col mt-4">
-            <li class="py-2">
-              <a href="index.html" class="">Home</a>
-            </li>
-            <li
-              class="relative flex justify-between items-center gap-2 py-2 group z-50"
-            >
-              <p class="cursor-pointer">Contest</p>
-              <ul
-                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
-              >
-                <li class="px-4 py-2">
-                  <a href="our-mission.html">Google Treasure Hunter</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="team.html">Excel Pro</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="testimonials.html">Presentation Master</a>
-                </li>
-              </ul>
-              <p><i class="fa-solid fa-angle-down"></i></p>
-            </li>
-            <li class="py-2">
-              <a href="#" class="">Join-Team</a>
-            </li>
-            <li
-              class="relative flex justify-between items-center gap-2 py-2 group z-40"
-            >
-              <p class="cursor-pointer">About</p>
-              <ul
-                class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
-              >
-                <li class="px-4 py-2">
-                  <a href="our-mission.html">Our Mission</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="team.html">Our Team</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="judges.html">Meet Our Judges</a>
-                </li>
-                <li class="px-4 py-2">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-              <p><i class="fa-solid fa-angle-down"></i></p>
-            </li>
-          </ul>
+  <!-- Mobile Sidebar -->
+  <div
+    id="mobileSidebar"
+    class="fixed inset-y-0 right-0 w-3/4 BgColor transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+  >
+    <div class="flex flex-col p-4 h-full">
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold"></h2>
+        <div class="text-2xl cursor-pointer" id="closeSidebar">
+          <i class="fa-solid fa-times"></i>
         </div>
       </div>
-    </header>
+      <ul class="flex flex-col mt-4">
+        <li class="py-2">
+          <a href="index.html" class="">Home</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-50"
+        >
+          <p class="cursor-pointer">Contest</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Google Treasure Hunter</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Excel Pro</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="testimonials.html">Presentation Master</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+        <li class="py-2">
+          <a href="#" class="">Join-Team</a>
+        </li>
+        <li
+          class="relative flex justify-between items-center gap-2 py-2 group z-40"
+        >
+          <p class="cursor-pointer">About</p>
+          <ul
+            class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+          >
+            <li class="px-4 py-2">
+              <a href="our-mission.html">Our Mission</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="team.html">Our Team</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="judges.html">Meet Our Judges</a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
  <main>
 
@@ -182,33 +182,42 @@
             
             <!-- Tabs -->
             <div class="flex flex-wrap border-b border-gray-300 justify-center py-6 lg:py-10 px-2 lg:text-xl gap-5 lg:gap-10">
-              <button id="about-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">About</button>
-              <button id="prizes-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">Prize Money</button>
-              <button id="schedule-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">Schedule</button>
-              <button id="venue-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">Venue</button>
-              <button id="rules-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">Rules & Marking</button>
-              <button id="notice-tab" class="tab-button text-black py-3 px-5 rounded-full bg-white hover:bg-green-400 hover:text-white transition-all duration-300 border  shadow-lg">Notice Board</button>
+              <button id="registration-tab" class="tab-button text-black py-3 px-5 bg-white ">Registration</button>
+              <button id="about-tab" class="tab-button text-black py-3 px-5  bg-white ">About</button>
+              <button id="prizes-tab" class="tab-button text-black py-3 px-5  bg-white ">Prize Money</button>
+              <button id="schedule-tab" class="tab-button text-black py-3 px-5  bg-white">Schedule</button>
+              <button id="venue-tab" class="tab-button text-black py-3 px-5  bg-white ">Venue</button>
+              <button id="rules-tab" class="tab-button text-black py-3 px-5  bg-white ">Rules & Marking</button>
+              <button id="notice-tab" class="tab-button text-black py-3 px-5  bg-white">Notice Board</button>
             </div>
       
             <!-- Tab Content -->
+
+            <div id="registration" class="tab-content px-5 lg:px-20 py-10 hidden">
+              <div class="bg-white text-black p-6 rounded-lg text-center">
+                <h2 class="text-3xl font-extrabold mb-4 ">Registration</h2>
+                  <button
+                    class="btn w-full lg:w-1/2 border-none text-xl text-white bg-[#0F264B] hover:bg-[#385b8d]"
+                  >
+                    Register Now
+                  </button>
+                
+              </div>
+            </div>
             <!-- About -->
             <div id="about" class="tab-content px-5 lg:px-20 py-10 active">
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col md:flex-row">
-                <div class="flex-1">
-                   <img src="./image/3026238.jpg" alt="" class="w-9/12">
-                </div>
-                <div class="flex-1">
+            
                   <h2 class="text-3xl font-extrabold mb-4">About</h2>
                   <p class="text-black text-justify">
                     Welcome to our annual event, where we bring together people from all walks of life for a day of celebration, learning, and competition. Enjoy a range of activities, from music performances to exciting games!
                   </p>
-                </div>
+                
               </div>
             </div>
       
             <!-- Prize Money -->
             <div id="prizes" class="tab-content px-5 lg:px-20 py-10 hidden">
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+              <div class="bg-white text-black p-6 rounded-lg ">
                 <h2 class="text-3xl font-extrabold mb-4">Prize Money</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                   
@@ -237,7 +246,7 @@
       
             <!-- Schedule -->
             <div id="schedule" class="tab-content px-5 lg:px-20 py-10 hidden">
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+              <div class="bg-white text-black p-6 rounded-lg">
                 <h2 class="text-3xl font-extrabold mb-4">Schedule</h2>
                 <ul class="list-disc pl-5 text-black">
                   <li>10:00 AM - Opening Ceremony</li>
@@ -248,13 +257,10 @@
                 </ul>
               </div>
             </div>
-
       
             <!-- Venue -->
             <div id="venue" class="tab-content px-5 lg:px-20 py-10 hidden">
-              
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 flex flex-col md:flex-row">
-               
+              <div class="bg-white text-black p-6 rounded-lg flex flex-col md:flex-row">
                 <div class="flex-1">
                   <h2 class="text-3xl font-extrabold mb-4">Venue</h2>
                   <p class="text-black">Location: Central Park, New York</p>
@@ -266,11 +272,10 @@
                 </div>
               </div>
             </div>
-            
       
             <!-- Rules & Marking -->
             <div id="rules" class="tab-content px-5 lg:px-20 py-10 hidden">
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+              <div class="bg-white text-black p-6 rounded-lg ">
                 <h2 class="text-3xl font-extrabold mb-4">Rules & Marking</h2>
                 <p class="text-black">All participants must adhere to the following rules:</p>
                 <ul class="list-disc pl-5 text-black">
@@ -285,7 +290,7 @@
       
             <!-- Notice Board -->
             <div id="notice" class="tab-content px-5 lg:px-20 py-10 hidden">
-              <div class="bg-white text-black p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+              <div class="bg-white text-black p-6 ">
                 <h2 class="text-3xl font-extrabold mb-4">Notice Board</h2>
                 <ul class="list-disc pl-5 text-black">
                   <li>Registration closes on September 25, 2024.</li>
@@ -314,14 +319,12 @@
         <div class="flex justify-center">
           <hr class="w-20 bold-hr" />
         </div>
-        <div class="container mx-auto flex flex-col md:flex-row items-center mt-10 relative">
-            <div class="absolute z-10 -bottom-2 -left-10">
-                <img src="./image/ep.png" alt="" class="w-3/12 hidden lg:block ">
-            </div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center mt-10 ">
+            
           <!-- Left Side: Promo Video -->
           <div class="w-full md:w-1/2 p-4">
             <div class="relative aspect-w-16 aspect-h-9">
-              <iframe class="w-full h-[200px] lg:h-[350px] rounded-2xl lg:rounded-ee-[128px] object-cover" width="560" height="315" src="https://www.youtube.com/embed/LgXzzu68j7M?si=Q_duXoVjmpY-ENOP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe class="w-full h-[200px] lg:h-[350px] rounded-2xl  object-cover" width="560" height="315" src="https://www.youtube.com/embed/LgXzzu68j7M?si=Q_duXoVjmpY-ENOP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
       
