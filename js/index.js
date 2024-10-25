@@ -30,7 +30,23 @@ function countUp(elementId, targetNumber) {
 window.onload = () => {
     countUp('participants', 500);
     countUp('subEvents', 3);
-    countUp('seminars', 5);
-    countUp('department', 53);
+    countUp('seminars', 3);
+    countUp('department', 30);
 };
 // Counter end
+
+
+
+// read more taggle
+const toggleButton = document.getElementById('toggleButton');
+const moreContent = document.getElementById('moreContent');
+
+toggleButton.addEventListener('click', () => {
+    if (moreContent.classList.contains('hidden')) {
+        moreContent.classList.remove('hidden');
+        toggleButton.textContent = 'See less ▲';
+    } else {
+        moreContent.classList.add('hidden');
+        toggleButton.textContent = 'See more ▼';
+    }
+});
