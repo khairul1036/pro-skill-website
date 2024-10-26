@@ -1,21 +1,27 @@
 const judges = [
     {
         id: 1,
-        name: "John Doe",
-        designation: "Chief Justice",
-        image: "https://firebasestorage.googleapis.com/v0/b/test-d262e.appspot.com/o/coo.png?alt=media&token=438c516b-ae7e-43fb-b2bb-19d923315de7"
+        name: "N/A",
+        designation: "N/A",
+        image: "image/demo-profile.jpg"
     },
     {
         id: 2,
-        name: "Jane Smith",
-        designation: "Associate Justice",
-        image: "https://firebasestorage.googleapis.com/v0/b/test-d262e.appspot.com/o/cpo.JPG?alt=media&token=f259f823-3ced-4bc3-97fa-2ce29630ac76"
+        name: "N/A",
+        designation: "N/A",
+        image: "image/demo-profile.jpg"
     },
     {
         id: 3,
-        name: "Emily Johnson",
-        designation: "District Judge",
-        image: "https://firebasestorage.googleapis.com/v0/b/test-d262e.appspot.com/o/cto.png?alt=media&token=188dd5c3-0bce-4b18-896f-6c5374a874b6"
+        name: "N/A",
+        designation: "N/A",
+        image: "image/demo-profile.jpg"
+    },
+    {
+        id: 3,
+        name: "N/A",
+        designation: "N/A",
+        image: "image/demo-profile.jpg"
     },
 ];
 

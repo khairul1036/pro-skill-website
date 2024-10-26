@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empower NextGen Ltd.</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- fontawesome and google font CDN link -->
+    <script
+      src="https://kit.fontawesome.com/70d1331392.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Barlow Font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and DaisyUI CDN link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="barlow-font BgBody">
+
+    <header
+    class="z-50 bg-white lg:bg-opacity-80 lg:backdrop-blur-md sticky top-0 shadow-sm"
+  >
+    <!-- Navbar design -->
+    <nav
+      class="max-w-screen-2xl mx-auto lg:px-24 py-5 w-full flex justify-between items-center z-5"
+    >
+      <div class="flex items-center gap-2 lg:gap-10 px-4 py-2">
+        <h1 class="text-3xl font-extrabold">
+          <a href="index.html"
+            ><img class="w-24 lg:w-36" src="image/logoBlack.png" alt=""
+          /></a>
+        </h1>
+      </div>
+      <div class="flex items-center gap-3 text-center px-5 lg:px-0 md:px-0">
+        <!-- Main navigation for larger screens -->
+        <ul class="hidden lg:flex items-center gap-3 text-center text-black">
+          <li class="px-4 py-2">
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+          >
+            <p class="cursor-pointer">Contest</p>
+            <ul
+              class="absolute left-0 top-6 hidden bg-white group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+            >
+              <li class="px-4 py-2">
+                <a href="./google-trasure.html">Google Treasure Hunter</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./excel-pro.html">Excel Pro</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./presentation.html">Presentation Master</a>
+              </li>
+            </ul>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+          </li>
+          <li class="relative px-4 py-2 group">
+            <a href="https://forms.gle/aaW9Modr9A8BWGX19">Join-Volunteer</a>
+          </li>
+          <li
+            class="relative flex justify-between items-center gap-2 px-4 py-2 group"
+          >
+            <p class="cursor-pointer">About</p>
+            <ul
+              class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52"
+            >
+              <li class="px-4 py-2">
+                <a href="./judges.html">Meet Our Judges</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./about.html">About Company</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://hrdi.ac/bn">About HRDI</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://www.facebook.com/SkillUpClub.HRDI?mibextid=ZbWKwL">About SkillUp Club</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://daffodilvarsity.edu.bd/article/history">About DIU</a>
+              </li>
+            </ul>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+          </li>
+        </ul>
+        <!-- Hamburger icon for mobile screens -->
+        <div class="lg:hidden text-2xl cursor-pointer" id="hamburgerMenu">
+          <i class="fa-solid fa-bars text-black"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div
+      id="mobileSidebar"
+      class="fixed inset-y-0 right-0 w-3/4 BgColor text-black transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-40"
+    >
+      <div class="flex flex-col p-4 h-full">
+        <div class="flex justify-between items-center">
+          <h2 class="text-xl font-bold"></h2>
+          <div class="text-2xl cursor-pointer" id="closeSidebar">
+            <i class="fa-solid fa-times"></i>
+          </div>
+        </div>
+        <ul class="flex flex-col mt-4">
+          <li class="py-2">
+            <a href="./index.html" class="">Home</a>
+          </li>
+          <li
+            class="relative flex justify-between items-center gap-2 py-2 group z-50"
+          >
+            <p class="cursor-pointer">Contest</p>
+            <ul
+              class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg mt-2 w-52 py-4"
+            >
+              <li class="px-4 py-2">
+                <a href="./google-trasure.html">Google Treasure Hunter</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./excel-pro.html">Excel Pro</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./presentation.html">Presentation Master</a>
+              </li>
+            </ul>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+          </li>
+          <li class="py-2">
+            <a href="https://forms.gle/aaW9Modr9A8BWGX19" class="">Join-Volunteer</a>
+          </li>
+          <li
+            class="relative flex justify-between items-center gap-2 py-2 group z-40"
+          >
+            <p class="cursor-pointer">About</p>
+            <ul
+              class="absolute left-0 top-6 hidden BgColor group-hover:block rounded-lg shadow-lg w-52 mt-2"
+            >
+              <li class="px-4 py-2">
+                <a href="./judges.html">Meet Our Judges</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="./about.html">About Company</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://hrdi.ac/bn">About HRDI</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://www.facebook.com/SkillUpClub.HRDI?mibextid=ZbWKwL">About SkillUp Club</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="https://daffodilvarsity.edu.bd/article/history">About DIU</a>
+              </li>
+            </ul>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+    <main>
+        <section class="max-w-screen-xl mx-auto py-5 lg:py-14">
+            <h1 class="font-bold text-2xl lg:text-3xl text-center">About Empower NextGen Ltd.</h1>
+            <p class="text-justify py-5 px-5"><b>Who Empower NextGen Ltd. Are:</b><br>
+
+                We are a dynamic and innovative event planning and management company specializing in the discovery and recognition of exceptional talent. Our primary mission is to serve as a platform that nurtures, develops, and celebrates individuals with extraordinary skills across various domains. We believe in unlocking the full potential of talent by creating opportunities that allow individuals to showcase their abilities, enhance their personal and professional growth, and build confidence in their leadership qualities.
+                
+                <br><br><b>What Empower NextGen Ltd. Do: </b><br>
+                
+                At the heart of our focus is the art of talent hunting. Through meticulously planned events, we provide a stage where people can demonstrate their capabilities and gain valuable exposure. Our programs are designed to not only spotlight talent but also foster a culture of self-improvement and lifelong learning. We are committed to guiding individuals on a journey of self-discovery and development, helping them uncover hidden strengths and abilities.
+                
+                <br><br><b>Key Offerings of Empower NextGen Ltd:</b>
+                
+                <br>1. Competitions: We organize competitions across various categories, from the arts to business, technology, and leadership. These competitions are structured to challenge participants, encourage innovation, and reward outstanding performance. Our competitions provide a platform for participants to test their skills in a real-world environment, competing with peers and gaining recognition for their achievements.
+                
+                
+                <br>2. Self-Development Training: In addition to competitions, we offer self-development training programs aimed at honing the personal and professional skills of participants. These programs focus on building confidence, enhancing communication skills, and fostering leadership qualities that are essential for success in today’s competitive landscape.
+                
+                
+                <br>3. Awards and Recognition: We believe in the power of recognition. Our award ceremonies are designed to acknowledge and celebrate the success and hard work of talented individuals. Whether it’s through certificates, trophies, or special distinctions, we ensure that every deserving participant receives recognition for their efforts, helping to boost their profile and open doors to future opportunities.
+                
+                
+                <br>4. Events and Talent Showcases: Our events go beyond the traditional. We curate talent showcases, workshops, networking events, and seminars that provide an immersive experience for participants. These events serve as platforms for participants to meet industry leaders, gain valuable insights, and develop meaningful connections that can advance their careers.
+                                
+                <br><br><b>Our Impact: </b><br>
+                
+                Through our comprehensive approach, we aim to create a lasting impact on the lives of individuals by helping them discover and refine their talents. We are passionate about empowering the next generation of leaders, creators, and innovators. Whether someone is at the beginning of their journey or looking to take their skills to the next level, our events offer a supportive environment where talent can thrive.
+                
+                <br><br><b>Why Choose Us?</b><br>
+                
+                Expertise in Event Management: Our team of experienced event planners ensures every detail is meticulously handled, providing participants with a seamless and enjoyable experience.
+                <br><br>
+                Diverse Opportunities: We offer a broad range of events, catering to individuals from various industries and backgrounds, ensuring there’s something for everyone.
+                <br><br>
+                Holistic Development: Our focus on both competition and personal growth ensures that participants leave our events with more than just accolades – they gain new skills, experiences, and a fresh perspective on their potential.
+                <br><br>
+                Join Us on the Journey: We invite talented individuals, businesses, and sponsors to partner with us on this exciting journey of discovery and growth. Whether you're looking to participate, sponsor an event, or simply be part of a movement that celebrates talent, we welcome you to be a part of our vibrant community. Together, we can create opportunities that transform lives and shape the future.
+                </p>
+        </section>
+ 
+    </main>
+  <!-- footer section -->
+  <footer class="bg-gradient-to-r from-[#0F264B] to-[#0A123C]">
+    <!--brand logo  -->
+    <div class="max-w-screen-xl mx-auto py-10 flex justify-center">
+      <a href="index.html"
+        ><img class="w-36" src="image/logoWhite.png" alt="logo"
+      /></a>
+    </div>
+    <!-- Quick Link container  -->
+    <div class="max-w-screen-xl mx-auto md:flex justify-between">
+      <div
+        class="md:w-[25%] flex flex-col items-center lg:items-start md:mb-0 mb-10"
+      >
+        <div class="mb-5">
+          <p
+            class="text-2xl font-semibold text-center lg:text-start text-slate-200"
+          >
+            Quick Link
+          </p>
+        </div>
+        <div>
+          <ul class="flex flex-col leading-7 text-center lg:text-start">
+            <li class="mb-1">
+              <a
+                class="font- hover:underline text-slate-200"
+                href="#"
+                >Our Team</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Join Us</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Advisor Panel</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Lottery Winner</a
+              >
+            </li>
+            <!-- <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Policy</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >Privacy</a
+              >
+            </li> -->
+            <li class="mb-1">
+              <a class="font- hover:underline text-slate-200" href="#"
+                >FAQ's</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Subscribe container  -->
+      <div
+        class="flex flex-col text-center gap-3 lg:gap-5 mt-2 lg:mt-0 text-slate-200"
+      >
+        <h2 class="text-2xl text-slate-200 font-semibold">Social Link</h2>
+        <a href="https://www.facebook.com/EmpowerNextGenLtd" target="_blank"
+          ><i class="fa-brands fa-facebook-f text-xl mr-2"></i>Facebook</a
+        >
+        <!-- <a href="#" target="_blank"
+          ><i class="fa-brands fa-instagram text-xl mr-2"></i>Instagram</a
+        > -->
+        <a
+          href="https://www.linkedin.com/company/empower-nextgen-ltd/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in text-xl mr-2"></i>LinkedIn</a
+        >
+        <!-- <a href="#" target="_blank"><i class="fa-brands fa-twitter text-xl mr-2"></i>X</a> -->
+        <!-- <a href="#" target="_blank"
+          ><i class="fa-brands fa-whatsapp text-xl mr-2"></i>WhatsApp</a
+        > -->
+        <a href="https://www.youtube.com/@EmpowerNextGenLtd" target="_blank"
+          ><i class="fa-brands fa-youtube text-xl mr-2"></i>Youtube</a
+        >
+      </div>
+
+      <!-- Contact container   -->
+      <div class="md:w-[25%] flex flex-col items-center lg:items-end">
+        <div class="mt-10 lg:mt-0 order-2 lg:order-3">
+          <h2 class="text-2xl mb-5 text-slate-200 font-semibold">Contact</h2>
+          <div class="text-slate-200">
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-phone text-2xl"></i>
+              <div class="">
+                <p><a href="tel:+8801568219379">+880 1568219379</a></p>
+                <p><a href="tel:+8801777973799">+880 1777973799</a></p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              <i class="fa-solid fa-envelope text-2xl"></i>
+              <div class="">
+                <p>
+                  <a href="mailto:info@example.com"
+                    >info@empowernextgenbd.com</a
+                  >
+                </p>
+                <p>
+                  <a href="mailto:support@example.com"
+                    >support@empowernextgenbd.com</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-location-dot text-2xl"></i>
+              <div class="">
+                <p>Dhaka,Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="max-w-screen-xl mx-auto mt-10" />
+    <div class="py-5 lg:py-10 text-center text-gray-300">
+      Copyright &copy; 2024 Empower NextGen Ldt.
+    </div>
+  </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
